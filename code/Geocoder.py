@@ -85,7 +85,7 @@ def Geocoder(key,inputFilePath,outputDirPath):
     file.write('id,city,address,status,wgs84_lng,wgs84_lat,bd09_lng,bd09_lat,precise,confidence,comprehension,level\n')
     for each in lAdress:
         tstr =str(each.id)+','+each.city+','+each.address+','+str(each.status)+','+str(each.wgs84_lng)+','+str(
-            each.wgs84_lat)+','+str(each.bd09_lng)+','+str(each.wgs84_lat)+','+str(each.precise)+','+str(
+            each.wgs84_lat)+','+str(each.bd09_lng)+','+str(each.bd09_lat)+','+str(each.precise)+','+str(
             each.confidence)+','+str(each.comprehension)+','+each.level+'\n'
         file.write(tstr)
     file.close()
